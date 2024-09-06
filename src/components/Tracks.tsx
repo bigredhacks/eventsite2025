@@ -4,7 +4,7 @@ import { Avatar, Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mu
 const Tracks: React.FC = () => {
   return (
     <Box sx={{ backgroundColor: '#FFFCF4', position: 'relative' }}>
-      <Box sx={{ paddingLeft: '40px' }}>
+      <Box sx={{paddingLeft: '100px'}}>
         <Box
           component='img'
           src={"src/assets/mug.png"}
@@ -28,8 +28,8 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#FA3934'>
-                  <strong>Big Red</strong> - Every team is automatically entered and judged in all criteria (technical, design, creativity, and overall impact).
+                <Typography color='#FA3934' variant='h6'>
+                  <strong>Big Red</strong> - Every team is automatically entered and judged in all criteria <br />(technical, design, creativity, and overall impact).
                 </Typography>
               </ListItem>
               <ListItem sx={{ alignItems: 'flex-start' }}>
@@ -38,7 +38,7 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#EA9A00'>
+                <Typography color='#EA9A00' variant='h6'>
                   <strong>Beginner</strong> - For first-time hackers.
                 </Typography>
               </ListItem>
@@ -48,7 +48,7 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#1A4CFF'>
+                <Typography color='#1A4CFF' variant='h6'>
                   <strong>Hardware</strong> - For hardware hackers.
                 </Typography>
               </ListItem>
@@ -58,7 +58,7 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#009C35'>
+                <Typography color='#009C35' variant='h6'>
                   <strong>People's Choice</strong> - Voted by hackers during the event.
                 </Typography>
               </ListItem>
@@ -66,7 +66,7 @@ const Tracks: React.FC = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ position: 'relative', mt: 4 }}>
+      <Box sx={{ position: 'relative' }}>
         {/* Regular Image */}
         <Box
           component="img"

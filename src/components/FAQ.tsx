@@ -5,7 +5,7 @@ import CoffeeIcon from '@mui/icons-material/Coffee'; // Import the coffee icon
 
 const FAQ: React.FC = () => {
     return (
-        <Box sx={{ padding: '40px', backgroundColor: '#FFFCF4' }}>
+        <Box sx={{ padding: '100px', backgroundColor: '#FFFCF4', marginTop:'-105px' }}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#388E3C', marginBottom: '20px' }}>
                 FAQ
             </Typography>

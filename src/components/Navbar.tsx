@@ -9,7 +9,7 @@ const Header: React.FC = () => {
                     <img src="src/components/brh-logo.png" alt="Big Red Hacks Logo" style={{ height: '40px', marginRight: '10px' }} />
                 </Box>
                 <Box display="flex" alignItems="center">
-                    {['About', 'Tracks', 'FAQ', 'Sponsors', 'Speakers'].map((item) => (
+                    {['About', 'Tracks', 'FAQ', 'Sponsors'].map((item) => (
                         <Button key={item} color="inherit" sx={{ fontWeight: 'bold', margin: '0 10px' }}>
                             {item}
                         </Button>

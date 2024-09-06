@@ -21,7 +21,7 @@ const formatTime = (time: any) => {
   
 const About: React.FC = () => {
     return (
-        <Box sx={{ paddingLeft: '100px', backgroundColor: '#FFF7F0' }}>
+        <Box sx={{ paddingLeft: '100px', backgroundColor: '#FFFCF4' }}>
             <Typography variant="h4" sx={{ fontWeight: 600, color: '#1A4CFF', marginBottom: '40px' }}>
                         About
             </Typography>
