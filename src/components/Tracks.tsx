@@ -1,13 +1,19 @@
 import React from 'react';
 import { Avatar, Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
+import mug from '../assets/mug.png';
+import spill from '../assets/spill.png';
+import wellness from '../assets/wellness.gif';
+import productivity from '../assets/productivity.gif';
+import entertainment from '../assets/entertainment.gif';
+import community from '../assets/community.gif';
 
 const Tracks: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: '#FFFCF4', position: 'relative' }}>
-      <Box sx={{paddingLeft: '100px'}}>
+    <Box id="Tracks" sx={{ backgroundColor: '#FFFCF4', position: 'relative' }}>
+      <Box sx={{ paddingLeft: '100px' }}>
         <Box
           component='img'
-          src={"src/assets/mug.png"}
+          src={mug}
           alt='Coffee Mug'
           sx={{ position: 'absolute', top: 0, right: 0, width: '30%' }}
         />
@@ -70,7 +76,7 @@ const Tracks: React.FC = () => {
         {/* Regular Image */}
         <Box
           component="img"
-          src="/src/components/spill.png"
+          src={spill}
           alt="Background"
           sx={{
             width: '100%',
@@ -95,25 +101,25 @@ const Tracks: React.FC = () => {
         >
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src="src/assets/wellness.gif" sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={wellness} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Wellness</Typography>
             </Box>
           </Grid>
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src="src/assets/productivity.gif" sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={productivity} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Productivity</Typography>
             </Box>
           </Grid>
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src={'src/assets/entertainment.gif'} sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={entertainment} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Entertainment</Typography>
             </Box>
           </Grid>
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src="src/assets/community.gif" sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={community} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Community</Typography>
             </Box>
           </Grid>
