@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Stack } from '@mui/material';
+import { Box, Typography, Stack, Grid } from '@mui/material';
 import Countdown from 'react-countdown';
 
 
@@ -12,7 +12,7 @@ const formatTime = (time: any) => {
     if (total) {
       // Render a countdown
       return (
-        <span style={{ fontSize: 56, fontWeight: 400, color: 'black' }}>
+        <span style={{ fontSize: 50, fontWeight: 400, color: 'black' }}>
           {formatTime(days)}:{" "}{formatTime(hours)}:{" "}{formatTime(minutes)}:{" "}{formatTime(seconds)}
         </span>
       );
@@ -25,8 +25,8 @@ const About: React.FC = () => {
             <Typography variant="h4" sx={{ fontWeight: 600, color: '#1A4CFF', marginBottom: '40px' }}>
                         About
             </Typography>
-            <Stack direction="row" spacing={2}>
-                <Stack direction="column" width={'45%'} spacing={2}>
+            <Grid container direction="row" spacing={2} sx={{ display: {xs: "block", md: "flex"}, justifyContent: "space-between", alignItems: "flex-start" }}>
+            <Grid item xs={6} direction="column" spacing={2} >
                     <Typography variant="h5" display="block" sx={{ fontWeight: 600, color: '#000000' }}>
                         BigRed//Hacks is Cornell University’s tight-knit, student-run hackathon organization, attracting hundreds of students from around the globe.
                     </Typography>
@@ -36,23 +36,25 @@ const About: React.FC = () => {
                     <Typography variant="h6"  sx={{ fontWeight: 400, color: '#000000' }}>
                         We are committed to lowering the barriers to entry into technology, ensuring that all participants—regardless of background—have access to the resources they need.
                     </Typography>
-                </Stack>
-                <Box display="flex">
-                    <Box style={{ position: 'absolute', paddingLeft: 160, paddingTop: 70}}>
+            </Grid>
+            <Grid item xs={6}>
+                    <Box style={{ position: 'absolute', paddingLeft: 130, paddingTop: 40}}>
                         <Countdown date='2024-10-04T00:00:00' renderer={renderer}></Countdown>
                     </Box>
-                    <Box style={{ position: 'absolute', paddingLeft: 160, paddingTop: 140}}>
-                        <Typography variant="h5" style={{color: "#000000", wordSpacing: 30}}>days hours mins secs</Typography>
+                    <Box style={{ position: 'absolute', paddingLeft: 130, paddingTop: 100}}>
+                        <Typography variant="h6" style={{color: "#000000", wordSpacing: 30}}>days hours mins secs</Typography>
                     </Box>
-                    <img src="src/assets/countdown.png" style={{ 
-                        marginTop: '-50px',
-                        marginLeft: 'auto',
+                    <Box component="img" src="src/assets/countdown.png" sx={{
+                        marginTop: {md: 0, lg: '-50px'},
                         width: '100%',
-                        textAlign: 'right'
-                    }}  />
-                </Box>
-            </Stack>
+                        marginLeft: 0,
+                        objectFit: 'cover'
+                        }}></Box>
+            </Grid>
+            </Grid>
         </Box>
+
+        
     );
 };
 export default About;
