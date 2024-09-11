@@ -31,6 +31,9 @@ const About: React.FC = () => {
                     <Typography variant="h5" display="block" sx={{ fontWeight: 600, color: '#000000' }}>
                         BigRed//Hacks is Cornell University’s tight-knit, student-run hackathon organization, attracting hundreds of students from around the globe.
                     </Typography>
+                    <Typography variant='h5' display="block" sx={{ fontWeight: 600, color: '#000000' }}>
+                        This year our event is on October 4-6th!
+                    </Typography>
                     <Typography variant="h6" sx={{ fontWeight: 400, color: '#000000' }}>
                         Since our inception in 2014, we’ve been on a mission to foster technological innovation by creating an inclusive and collaborative environment.
                     </Typography>

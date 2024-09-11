@@ -1,11 +1,11 @@
 import React from 'react';
-import { Avatar, Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
+import { Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
 import mug from '../assets/mug.png';
 import spill from '../assets/spill.png';
-import wellness from '../assets/wellness.gif';
-import productivity from '../assets/productivity.gif';
-import entertainment from '../assets/entertainment.gif';
-import community from '../assets/community.gif';
+// import wellness from '../assets/wellness.gif';
+// import productivity from '../assets/productivity.gif';
+// import entertainment from '../assets/entertainment.gif';
+// import community from '../assets/community.gif';
 
 const Tracks: React.FC = () => {
   return (
@@ -83,7 +83,6 @@ const Tracks: React.FC = () => {
             height: 'auto',
           }}
         />
-
         <Grid
           container
           spacing={2}
@@ -99,7 +98,8 @@ const Tracks: React.FC = () => {
             padding: 2,
           }}
         >
-          <Grid item xs={3}>
+          <Typography color='white' variant='h4' >Theme revealed at opening ceremony!</Typography>
+          {/* <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
               <Avatar src={wellness} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Wellness</Typography>
@@ -122,7 +122,7 @@ const Tracks: React.FC = () => {
               <Avatar src={community} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Community</Typography>
             </Box>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
     </Box>
