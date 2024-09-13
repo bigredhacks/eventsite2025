@@ -20,7 +20,10 @@ const Footer: React.FC = () => {
                 Brewed with ❤️ by <span style={{ fontWeight: 'bolder' }}>Big Red // Hacks Team</span>
             </Typography>
             <Typography variant='body1'>
-                <a href="https://hackp.ac/coc">MLH Code of Conduct</a>
+                <a style={{ color: 'white' }} href="https://hackp.ac/coc">MLH Code of Conduct</a>
+            </Typography>
+            <Typography variant='body1'>
+                Registered student organization of Cornell University
             </Typography>
         </Box>
     );

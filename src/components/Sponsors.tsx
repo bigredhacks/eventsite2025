@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 const Sponsors: React.FC = () => {
     return (
-        <Box id="Sponsors" sx={{ padding: '100px', backgroundColor: '#FFFCF4', marginTop: '-105px' }}>
+        <Box id="Sponsors" sx={{ padding: '100px', paddingTop: '150px', backgroundColor: '#FFFCF4', marginTop: '-105px' }}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#EA9A00', marginBottom: '20px' }}>
                 Sponsors
             </Typography>
