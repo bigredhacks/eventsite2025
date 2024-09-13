@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import CoffeeIcon from '@mui/icons-material/Coffee'; // Import the coffee icon
+import CoffeeIcon from '@mui/icons-material/Coffee';
 
 const FAQ: React.FC = () => {
     return (
-        <Box id="FAQ" sx={{ padding: '100px', backgroundColor: '#FFFCF4', marginTop: '-105px' }}>
+        <Box sx={{ padding: '40px', backgroundColor: '#FFFCF4' }}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#388E3C', marginBottom: '20px' }}>
                 FAQ
             </Typography>
@@ -18,22 +18,21 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>What’s a Hackathon?</Typography>
+                            <Typography>What’s a hackathon?</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                A hackathon is a weekend-long event where hundreds of students from around the globe come together to attend seminars and work on creative software and hardware projects based on a chosen theme.
-                            </Typography>
+                                A hackathon is a weekend-long event where hundreds of students from around the globe come together to attend seminars and work on creative software and hardware projects based on a chosen theme.                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>How can I ask a question?</Typography>
+                            <Typography>How can I ask a question? </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                You can ask a question by emailing bigredhacks@cornell.edu
+                                You can ask a question by emailing bigredhacks@cornell.edu or by filling in the form on the Contact Us page.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -47,7 +46,8 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>Who can participate in the hackathon?</Typography>
+                            <Typography>Who can participate in the hackathon?
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -58,7 +58,8 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>How can I sign up?</Typography>
+                            <Typography>How can I sign up?
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -69,7 +70,8 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>Can I pick my team?</Typography>
+                            <Typography>Can I pick my team?
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -80,12 +82,12 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>Can I sign up without a team?</Typography>
+                            <Typography>Can I sign up without a team?
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Yes, you can sign up without a team! Before and during the event, we will provide opportunities for you to meet people with matching interests to build a project with.
-                            </Typography>
+                                Yes, you can sign up without a team! Before and during the event, we will provide opportunities for you to meet people with matching interests to build a project with.                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                 </Box>
@@ -98,7 +100,8 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>Where and when is the hackathon?</Typography>
+                            <Typography>Where and when is the hackathon?
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -109,7 +112,8 @@ const FAQ: React.FC = () => {
                     <Accordion>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>Will food be provided?</Typography>
+                            <Typography>Will food be provided?
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -125,6 +129,17 @@ const FAQ: React.FC = () => {
                         <AccordionDetails>
                             <Typography>
                                 Yes, overnight accommodations will be provided at the event site.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
+                            <Typography>I have a question?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Please reach out to our support team for any specific questions you might have.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
