@@ -11,9 +11,13 @@ const formatTime = (time: any) => {
     if (total) {
       // Render a countdown
       return (
-        <span style={{ fontSize: 50, fontWeight: 400, color: 'black' }}>
+        <Typography sx={{ 
+          typography: { lg: 'h2', md: 'h4', sm: 'h4', xs: 'h5'},
+          marginTop: { lg: 5, md: -5, sm:-10, xs: -5}, 
+          marginLeft: { lg: 5, md: 0, xs: -3}, 
+          color: 'black'}} >
           {formatTime(days)}:{" "}{formatTime(hours)}:{" "}{formatTime(minutes)}:{" "}{formatTime(seconds)}
-        </span>
+        </Typography>
       );
     }
   };
@@ -47,7 +51,11 @@ const About: React.FC = () => {
             textAlign: 'center'
           }}>
             <Countdown date='2024-10-04T00:00:00' renderer={renderer}></Countdown>
-            <Typography variant="h6" sx={{ marginTop: '10px', wordSpacing: 30 }}>
+            <Typography sx={{ 
+              typography: { lg: 'h5', md: 'h6', sm: 'body1', xs: 'body1'},
+              marginLeft: { lg: 5, md: 0, xs: -3},
+              wordSpacing: { lg: 40, md:10, sm:10, xs: 5}, 
+              color: 'black'}}>
               days hours mins secs
             </Typography>
           </Box>
