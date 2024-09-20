@@ -79,6 +79,7 @@ const Tracks: React.FC = () => {
           src={spill}
           alt="Background"
           sx={{
+            marginTop: -7.5,
             width: '100%',
             height: 'auto',
           }}
