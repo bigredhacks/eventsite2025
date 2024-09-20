@@ -16,7 +16,7 @@ const sponsors = [
 
 const Sponsors: React.FC = () => {
     return (
-        <Box>
+        <Box >
             <Box id="Sponsors" sx={{ paddingLeft: '100px', backgroundColor: '#FFFCF4' }}>
                 <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#EA9A00', marginBottom: '20px' }}>
                     Sponsors
