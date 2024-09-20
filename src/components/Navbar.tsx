@@ -16,13 +16,14 @@ const Header: React.FC = () => {
     };
 
     return (
-        <Box style={{ display: 'flex' }}>
-            <AppBar position='static' elevation={0} sx={{ background: 'none', color: 'black', width: '90%' }}>
-                <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <>
+            <AppBar position='static' elevation={0} sx={{ background: 'none', color: 'black' }}>
+                <Toolbar sx={{ justifyContent: 'space-between', width: {xs: 'calc(100vw - 200px)', md: 'calc(100vw - 225px)'}}}>
                     <Box display='flex' alignItems='center'>
                         <img src={brhlogo} alt='Big Red Hacks Logo' style={{ height: '40px', marginRight: '10px' }} />
                     </Box>
                     <Box display='flex' alignItems='center'>
+
                         {/* Regular menu */}
                         <Box display={{ xs: 'none', md: 'flex' }}>
                             {pages.map(item => (
@@ -77,10 +78,10 @@ const Header: React.FC = () => {
                     </Box>
                 </Toolbar>
             </AppBar>
-            <a id='mlh-trust-badge' style={{ display: 'block', maxWidth: '100px', minWidth: '60px', right: '50px', top: '0px', width: '10%' }} href='https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=red' target='_blank'>
+            <a id='mlh-trust-badge' style={{ display: 'block', maxWidth: '100px', minWidth: '60px', right: '50px', top: '0px', position: 'absolute', width: '10%' }} href='https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=red' target='_blank'>
                 <img src='https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-red.svg' alt='Major League Hacking 2025 Hackathon Season' style={{ width: '100%' }} />
             </a>
-        </Box>
+        </>
     );
 };
 
