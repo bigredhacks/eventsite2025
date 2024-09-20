@@ -18,48 +18,46 @@ const Header: React.FC = () => {
     return (
         <>
             <AppBar position='static' elevation={0} sx={{ background: 'none', color: 'black' }}>
-                <Toolbar sx={{ justifyContent: 'space-between', width: {xs: 'calc(100vw - 200px)', md: 'calc(100vw - 225px)'}}}>
-                    <Box display='flex' alignItems='center'>
-                        <img src={brhlogo} alt='Big Red Hacks Logo' style={{ height: '40px', marginRight: '10px' }} />
+                <Toolbar sx={{ justifyContent: 'space-between', width: { xs: 'calc(100vw - 200px)', md: 'calc(100vw - 225px)' } }}>
+                    <Box display={{ xs: 'none', md: 'flex' }} alignItems='center'>
+                        <img src={brhlogo} alt='Big Red Hacks Logo' style={{ height: '50px', marginRight: '10px' }} />
+                    </Box>
+                    {/* Responsive Hamburger Menu */}
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <IconButton size='large' aria-label='account of current user' aria-controls='menu-appbar' aria-haspopup='true' onClick={handleOpenNavMenu} color='inherit'>
+                            <MenuIcon />
+                        </IconButton>
+                        <Menu
+                            id='menu-appbar'
+                            anchorEl={anchorElNav}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left'
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left'
+                            }}
+                            open={Boolean(anchorElNav)}
+                            onClose={handleCloseNavMenu}
+                            sx={{ display: { xs: 'block', md: 'none' } }}
+                        >
+                            {pages.map(page => (
+                                <MenuItem key={page} onClick={handleCloseNavMenu} component='a' href={`#${page}`}>
+                                    <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                                </MenuItem>
+                            ))}
+                        </Menu>
                     </Box>
                     <Box display='flex' alignItems='center'>
-
                         {/* Regular menu */}
                         <Box display={{ xs: 'none', md: 'flex' }}>
                             {pages.map(item => (
-                                <Button key={item} href={`#${item}`} color='inherit' sx={{ fontWeight: 'bold', margin: '0 10px' }}>
+                                <Button key={item} href={`#${item}`} color='inherit' sx={{ fontWeight: 'bold', margin: '0 10px', fontSize: 15  }}>
                                     {item}
                                 </Button>
                             ))}
-                        </Box>
-
-                        {/* Responsive Hamburger Menu */}
-                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                            <IconButton size='large' aria-label='account of current user' aria-controls='menu-appbar' aria-haspopup='true' onClick={handleOpenNavMenu} color='inherit'>
-                                <MenuIcon />
-                            </IconButton>
-                            <Menu
-                                id='menu-appbar'
-                                anchorEl={anchorElNav}
-                                anchorOrigin={{
-                                    vertical: 'bottom',
-                                    horizontal: 'left'
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'left'
-                                }}
-                                open={Boolean(anchorElNav)}
-                                onClose={handleCloseNavMenu}
-                                sx={{ display: { xs: 'block', md: 'none' } }}
-                            >
-                                {pages.map(page => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu} component='a' href={`#${page}`}>
-                                        <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                                    </MenuItem>
-                                ))}
-                            </Menu>
                         </Box>
 
                         <a href='https://apply.bigredhacks.com' target='_blank' rel='noreferrer'>
@@ -69,7 +67,8 @@ const Header: React.FC = () => {
                                     backgroundColor: '#FA3934',
                                     fontWeight: 'bold',
                                     textTransform: 'none',
-                                    marginLeft: '20px'
+                                    marginLeft: '20px',
+                                    fontSize: 15 
                                 }}
                             >
                                 Apply
