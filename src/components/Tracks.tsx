@@ -1,13 +1,19 @@
 import React from 'react';
-import { Avatar, Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
+import { Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
+import mug from '../assets/mug.png';
+import spill from '../assets/spill.png';
+// import wellness from '../assets/wellness.gif';
+// import productivity from '../assets/productivity.gif';
+// import entertainment from '../assets/entertainment.gif';
+// import community from '../assets/community.gif';
 
 const Tracks: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: '#FFFCF4', position: 'relative' }}>
-      <Box sx={{ paddingLeft: '40px' }}>
+    <Box id="Tracks" sx={{ backgroundColor: '#FFFCF4', position: 'relative' }}>
+      <Box sx={{ paddingLeft: '100px' }}>
         <Box
           component='img'
-          src={"src/assets/mug.png"}
+          src={mug}
           alt='Coffee Mug'
           sx={{ position: 'absolute', top: 0, right: 0, width: '30%' }}
         />
@@ -28,8 +34,8 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#FA3934'>
-                  <strong>Big Red</strong> - Every team is automatically entered and judged in all criteria (technical, design, creativity, and overall impact).
+                <Typography color='#FA3934' variant='h6'>
+                  <strong>Big Red</strong> - Every team is automatically entered and judged in all criteria <br />(technical, design, creativity, and overall impact).
                 </Typography>
               </ListItem>
               <ListItem sx={{ alignItems: 'flex-start' }}>
@@ -38,7 +44,7 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#EA9A00'>
+                <Typography color='#EA9A00' variant='h6'>
                   <strong>Beginner</strong> - For first-time hackers.
                 </Typography>
               </ListItem>
@@ -48,7 +54,7 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#1A4CFF'>
+                <Typography color='#1A4CFF' variant='h6'>
                   <strong>Hardware</strong> - For hardware hackers.
                 </Typography>
               </ListItem>
@@ -58,7 +64,7 @@ const Tracks: React.FC = () => {
                     ●
                   </Typography>
                 </ListItemIcon>
-                <Typography color='#009C35'>
+                <Typography color='#009C35' variant='h6'>
                   <strong>People's Choice</strong> - Voted by hackers during the event.
                 </Typography>
               </ListItem>
@@ -66,18 +72,17 @@ const Tracks: React.FC = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ position: 'relative', mt: 4 }}>
+      <Box sx={{ position: 'relative' }}>
         {/* Regular Image */}
         <Box
           component="img"
-          src="/src/components/spill.png"
+          src={spill}
           alt="Background"
           sx={{
             width: '100%',
             height: 'auto',
           }}
         />
-
         <Grid
           container
           spacing={2}
@@ -93,30 +98,31 @@ const Tracks: React.FC = () => {
             padding: 2,
           }}
         >
-          <Grid item xs={3}>
+          <Typography color='white' variant='h4' >Theme revealed at opening ceremony!</Typography>
+          {/* <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src="src/assets/wellness.gif" sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={wellness} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Wellness</Typography>
             </Box>
           </Grid>
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src="src/assets/productivity.gif" sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={productivity} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Productivity</Typography>
             </Box>
           </Grid>
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src={'src/assets/entertainment.gif'} sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={entertainment} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Entertainment</Typography>
             </Box>
           </Grid>
           <Grid item xs={3}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Avatar src="src/assets/community.gif" sx={{ width: 150, height: 150 }} variant='rounded' />
+              <Avatar src={community} sx={{ width: 150, height: 150 }} variant='rounded' />
               <Typography variant="h5" fontWeight="bold" color='white'>Community</Typography>
             </Box>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
     </Box>
