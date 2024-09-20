@@ -12,7 +12,7 @@ const formatTime = (time: any) => {
       // Render a countdown
       return (
         <Typography sx={{ 
-          typography: { lg: 'h2', md: 'h4', sm: 'h4', xs: 'h5'},
+          typography: { lg: 'h3', md: 'h4', sm: 'h4', xs: 'h5'},
           marginTop: { lg: 5, md: -5, sm:-10, xs: -5}, 
           marginLeft: { lg: 5, md: 0, xs: -3}, 
           color: 'black'}} >
@@ -52,7 +52,7 @@ const About: React.FC = () => {
           }}>
             <Countdown date='2024-10-04T00:00:00' renderer={renderer}></Countdown>
             <Typography sx={{ 
-              typography: { lg: 'h5', md: 'h6', sm: 'body1', xs: 'body1'},
+              typography: { lg: 'h6', md: 'h6', sm: 'body1', xs: 'body1'},
               marginLeft: { lg: 5, md: 0, xs: -3},
               wordSpacing: { lg: 40, md:10, sm:10, xs: 5}, 
               color: 'black'}}>
