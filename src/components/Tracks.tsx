@@ -37,43 +37,28 @@ const Tracks: React.FC = () => {
           <Grid item xs={12}>
             <List>
               <ListItem sx={{ alignItems: 'flex-start' }}>
-                <ListItemIcon sx={{ minWidth: 'auto' }}>
-                  <Typography>
-                    ●
-                  </Typography>
-                </ListItemIcon>
                 <Typography color='#FA3934' variant='h6'>
                   <strong>Big Red</strong> - Every team is automatically entered and judged in all criteria <br />(technical, design, creativity, and overall impact).
                 </Typography>
               </ListItem>
               <ListItem sx={{ alignItems: 'flex-start' }}>
-                <ListItemIcon sx={{ minWidth: 'auto' }}>
-                  <Typography>
-                    ●
-                  </Typography>
-                </ListItemIcon>
                 <Typography color='#EA9A00' variant='h6'>
                   <strong>Beginner</strong> - For first-time hackers.
                 </Typography>
               </ListItem>
               <ListItem sx={{ alignItems: 'flex-start' }}>
-                <ListItemIcon sx={{ minWidth: 'auto' }}>
-                  <Typography>
-                    ●
-                  </Typography>
-                </ListItemIcon>
                 <Typography color='#1A4CFF' variant='h6'>
                   <strong>Hardware</strong> - For hardware hackers.
                 </Typography>
               </ListItem>
               <ListItem sx={{ alignItems: 'flex-start' }}>
-                <ListItemIcon sx={{ minWidth: 'auto' }}>
-                  <Typography>
-                    ●
-                  </Typography>
-                </ListItemIcon>
                 <Typography color='#009C35' variant='h6'>
                   <strong>People's Choice</strong> - Voted by hackers during the event.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ alignItems: 'flex-start' }}>
+                <Typography color='#9327FF' variant='h6'>
+                  <strong>Design</strong> - Project with the best UI/UX.
                 </Typography>
               </ListItem>
             </List>
@@ -86,7 +71,7 @@ const Tracks: React.FC = () => {
           src={spill}
           alt="Background"
           sx={{
-            marginTop: -7.5,
+            marginTop: -15.5,
             width: '100%',
             height: 'auto',
           }}
