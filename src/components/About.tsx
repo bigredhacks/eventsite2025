@@ -1,6 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 import Countdown from 'react-countdown';
+import computer from '../assets/countdown.png';
 
 const formatTime = (time: any) => {
     return String(time).padStart(2, '0');
@@ -69,7 +70,7 @@ const About: React.FC = () => {
                     </Box>
                     <Box
                         component='img'
-                        src='src/assets/countdown.png'
+                        src={computer}
                         sx={{
                             width: '100%',
                             objectFit: 'cover',
