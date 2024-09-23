@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, List, ListItem, ListItemIcon, Typography } from '@mui/material';
+import { Box, Grid, List, ListItem, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import mug from '../assets/mug.png';

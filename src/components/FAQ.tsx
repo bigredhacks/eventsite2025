@@ -51,7 +51,7 @@ const FAQ: React.FC = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Everyone (over 18), regardless of their education level, is invited to participate in our hackathons!
+                            We are open to everyone who is above 18 years old and is currently enrolled in a university.                            
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
