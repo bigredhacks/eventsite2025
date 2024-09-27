@@ -132,17 +132,6 @@ const FAQ: React.FC = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <CoffeeIcon sx={{ marginRight: '10px', color: '#000' }} />
-                            <Typography>I have a question?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                Please reach out to our support team for any specific questions you might have.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
                 </Box>
             </Box>
         </Box>

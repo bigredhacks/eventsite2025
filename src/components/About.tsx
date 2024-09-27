@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 import Countdown from 'react-countdown';
+import countdown from '../assets/countdown.png';
 
 const formatTime = (time: any) => {
     return String(time).padStart(2, '0')
@@ -37,7 +38,7 @@ const formatTime = (time: any) => {
           days hours mins secs
         </Typography>
         </Box>
-        <Box component="img" src="src/assets/countdown.png" sx={{
+        <Box component="img" src={countdown} sx={{
           width: '100%',
           objectFit: 'cover',
           position: 'relative'
