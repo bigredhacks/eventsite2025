@@ -22,8 +22,8 @@ const formatTime = (time: any) => {
         }}>
 
         <Typography sx={{ 
-          fontSize: { xl: '3.5rem', lg: '2.65rem', md: '2rem', sm: '2.8rem', xs: '1.7rem'},
-          marginTop: { xl: 3, lg: 3, md: -8, sm:-13, xs: -6}, 
+          fontSize: { xl: '3.3rem', lg: '2.65rem', md: '1.9rem', sm: '2.8rem', xs: '1.7rem'},
+          marginTop: { xl: 3, lg: 3, md: -8, sm:-13, xs: -7}, 
           marginLeft: { lg: 5, md: 0, sm:-2, xs: -1}, 
           color: 'black'}} >
           {formatTime(days)}:{" "}{formatTime(hours)}:{" "}{formatTime(minutes)}:{" "}{formatTime(seconds)}
@@ -32,7 +32,7 @@ const formatTime = (time: any) => {
         <Typography sx={{ 
           fontSize: { xl: '1.5rem', lg: '1.2rem', md: '1rem', sm: '1.4rem', xs: '.9rem'},
           marginLeft: { xl: 5, lg: 5, md: 0, sm: -2, xs: -1},
-          wordSpacing: { xl: 30, lg: 20, md:10, sm:20, xs: 10}, 
+          wordSpacing: { xl: 25, lg: 20, md:10, sm:20, xs: 10}, 
           color: 'black'}}>
           days hours mins secs
         </Typography>
