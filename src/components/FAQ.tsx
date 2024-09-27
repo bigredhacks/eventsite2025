@@ -5,7 +5,7 @@ import CoffeeIcon from '@mui/icons-material/Coffee';
 
 const FAQ: React.FC = () => {
     return (
-        <Box id="FAQ" sx={{ padding: '100px', backgroundColor: '#FFFCF4' }}>
+        <Box id="FAQ" sx={{ padding: { xs: '50px', md: '100px' }, backgroundColor: '#FFFCF4' }}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#388E3C', marginBottom: '20px' }}>
                 FAQ
             </Typography>
@@ -51,7 +51,7 @@ const FAQ: React.FC = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Everyone (over 18), regardless of their education level, is invited to participate in our hackathons!
+                            We are open to everyone who is above 18 years old and is currently enrolled in a university.                            
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
