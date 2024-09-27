@@ -11,13 +11,38 @@ const formatTime = (time: any) => {
     if (total) {
       // Render a countdown
       return (
+        <Box>
+        <Box sx={{
+          position: 'absolute',
+          zIndex: 1,
+          top: { xs: '40%', md: '40%', lg: '30%' },
+          left: { xs: '50%', md: '48%', lg:'45%' },
+          transform: 'translate(-50%, -50%)',
+          textAlign: 'center'
+        }}>
+
         <Typography sx={{ 
-          typography: { lg: 'h3', md: 'h4', sm: 'h4', xs: 'h5'},
-          marginTop: { lg: 5, md: -5, sm:-10, xs: -5}, 
-          marginLeft: { lg: 5, md: 0, xs: -3}, 
+          fontSize: { xl: '3.5rem', lg: '2.65rem', md: '2rem', sm: '2.8rem', xs: '1.7rem'},
+          marginTop: { xl: 3, lg: 3, md: -8, sm:-13, xs: -6}, 
+          marginLeft: { lg: 5, md: 0, sm:-2, xs: -1}, 
           color: 'black'}} >
           {formatTime(days)}:{" "}{formatTime(hours)}:{" "}{formatTime(minutes)}:{" "}{formatTime(seconds)}
         </Typography>
+
+        <Typography sx={{ 
+          fontSize: { xl: '1.5rem', lg: '1.2rem', md: '1rem', sm: '1.4rem', xs: '.9rem'},
+          marginLeft: { xl: 5, lg: 5, md: 0, sm: -2, xs: -1},
+          wordSpacing: { xl: 30, lg: 20, md:10, sm:20, xs: 10}, 
+          color: 'black'}}>
+          days hours mins secs
+        </Typography>
+        </Box>
+        <Box component="img" src="src/assets/countdown.png" sx={{
+          width: '100%',
+          objectFit: 'cover',
+          position: 'relative'
+        }}></Box>
+        </Box>
       );
     }
   };
@@ -42,28 +67,7 @@ const About: React.FC = () => {
         </Grid>
 
         <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
-          <Box sx={{
-            position: 'absolute',
-            zIndex: 1,
-            top: { xs: '40%', md: '40%', lg: '30%' },
-            left: { xs: '50%', md: '48%', lg:'45%' },
-            transform: 'translate(-50%, -50%)',
-            textAlign: 'center'
-          }}>
-            <Countdown date='2024-10-04T00:00:00' renderer={renderer}></Countdown>
-            <Typography sx={{ 
-              typography: { lg: 'h6', md: 'h6', sm: 'body1', xs: 'body1'},
-              marginLeft: { lg: 5, md: 0, xs: -3},
-              wordSpacing: { lg: 40, md:10, sm:10, xs: 5}, 
-              color: 'black'}}>
-              days hours mins secs
-            </Typography>
-          </Box>
-          <Box component="img" src="src/assets/countdown.png" sx={{
-            width: '100%',
-            objectFit: 'cover',
-            position: 'relative'
-          }}></Box>
+        <Countdown date='2024-10-04T00:00:00' renderer={renderer}></Countdown>
         </Grid>
       </Grid>
     </Box>
