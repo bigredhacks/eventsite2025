@@ -6,7 +6,7 @@ import FAQ from "./components/FAQ";
 import Sponsors from "./components/Sponsors";
 import Tracks from "./components/Tracks";
 import About from "./components/About";
-// import Schedules from "./components/Schedules";
+import Schedules from "./components/Schedules";
 
 const RootWrapper = styled(Box)(() => ({
   width: "100%",
@@ -23,7 +23,7 @@ function App() {
       <Hero/>
       <About/>
       <Tracks/>
-      {/* <Schedules/> */}
+      <Schedules/>
       <FAQ/>
       <Sponsors/>
       <Footer/>
