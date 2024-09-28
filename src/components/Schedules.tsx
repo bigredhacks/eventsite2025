@@ -7,6 +7,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Box, Typography } from '@mui/material';
+import friday from '../assets/schedule/friday.png';
+import sat from '../assets/schedule/saturday.png';
+import sun from '../assets/schedule/sunday.png';
+
 
 const Schedules: React.FC = () => {
 
@@ -50,16 +54,19 @@ const Schedules: React.FC = () => {
     createData('1:00 PM', 'Hackathon Ends')
   ];
     
-
   return (
-
     <Box id="FAQ" sx={{ padding: { xs: '50px', md: '100px' }, backgroundColor: '#FFFCF4' }}>
     <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#388E3C', marginBottom: '20px' }}>
         Schedule
     </Typography>
-      <Box sx={{paddingBottom: 5}}>
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 400}} aria-label="simple table">
+    <Box sx={{paddingBottom: 5, display: 'flex', alignItems: 'center', flexDirection: {xs: 'column', md: 'row'}}} >
+      <Box component="img" src={friday} sx={{
+          width: {xs: '75%', md:'35%'},
+          objectFit: 'cover',
+          position: 'relative'
+        }}></Box>
+    <TableContainer component={Paper} sx={{ maxWidth: 1000}}>
+      <Table aria-label="simple table">
         <TableHead sx={{background: "#00C844"}}>
           <TableRow>
             <TableCell sx={{color:'white', fontSize: '1.5rem', fontWeight: 900}}>Time</TableCell>
@@ -85,8 +92,14 @@ const Schedules: React.FC = () => {
       </Table>
     </TableContainer>
     </Box>
-    <Box sx={{paddingBottom: 5}}>
-    <TableContainer component={Paper}>
+    <Box sx={{paddingBottom: 5, display: 'flex', alignItems: 'center', flexDirection: {xs: 'column', md: 'row-reverse'}}} >
+      <Box component="img" src={sat} sx={{
+          width: {xs: '75%', md:'35%'},
+          objectFit: 'cover',
+          position: 'relative'
+        }}></Box>
+      
+    <TableContainer component={Paper} sx = {{maxWidth: 1000}}>
       <Table sx={{ minWidth: 400 }} aria-label="simple table">
         <TableHead sx={{backgroundColor : "#1A4CFF"}}>
           <TableRow>
@@ -113,8 +126,13 @@ const Schedules: React.FC = () => {
       </Table>
     </TableContainer>
     </Box>
-    <Box >
-    <TableContainer component={Paper}>
+    <Box sx={{paddingBottom: 5, display: 'flex', alignItems: 'center', flexDirection: {xs: 'column', md: 'row'}}} >
+      <Box component="img" src={sun} sx={{
+          width: {xs: '75%', md:'35%'},
+          objectFit: 'cover',
+          position: 'relative'
+        }}></Box>
+    <TableContainer component={Paper} sx={{maxWidth: 1000}}>
       <Table sx={{ minWidth: 400 }} aria-label="simple table">
         <TableHead sx={{backgroundColor: "#FE1736"}}>
           <TableRow>
