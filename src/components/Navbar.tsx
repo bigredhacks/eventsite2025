@@ -4,7 +4,7 @@ import React from 'react';
 import brhlogo from '../assets/brh-logo.png';
 
 const Header: React.FC = () => {
-    const pages = ['About', 'Tracks', 'FAQ', 'Sponsors'];
+    const pages = ['About', 'Tracks', 'Schedule', 'FAQ', 'Sponsors'];
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
                         {/* Regular menu */}
                         <Box display={{ xs: 'none', md: 'flex' }}>
                             {pages.map(item => (
-                                <Button key={item} href={`#${item}`} color='inherit' sx={{ fontWeight: 'bold', margin: '0 10px', fontSize: 15  }}>
+                                <Button key={item} href={`#${item}`} color='inherit' sx={{ fontWeight: 'bold', margin: '0 10px', fontSize: 15 }}>
                                     {item}
                                 </Button>
                             ))}
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
                                     fontWeight: 'bold',
                                     textTransform: 'none',
                                     marginLeft: '20px',
-                                    fontSize: 15 
+                                    fontSize: 15
                                 }}
                             >
                                 Apply
