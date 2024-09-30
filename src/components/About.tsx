@@ -22,18 +22,18 @@ const formatTime = (time: any) => {
           textAlign: 'center'
         }}>
 
-        <Typography sx={{ 
+        <Typography sx={{
           fontSize: { xl: '3.3rem', lg: '2.65rem', md: '1.9rem', sm: '2.8rem', xs: '1.7rem'},
-          marginTop: { xl: 3, lg: 3, md: -8, sm:-13, xs: -7}, 
-          marginLeft: { lg: 5, md: 0, sm:-2, xs: -1}, 
+          marginTop: { xl: 3, lg: 3, md: -8, sm:-13, xs: -7},
+          marginLeft: { lg: 5, md: 0, sm:-2, xs: -1},
           color: 'black'}} >
           {formatTime(days)}:{" "}{formatTime(hours)}:{" "}{formatTime(minutes)}:{" "}{formatTime(seconds)}
         </Typography>
 
-        <Typography sx={{ 
+        <Typography sx={{
           fontSize: { xl: '1.5rem', lg: '1.2rem', md: '1rem', sm: '1.4rem', xs: '.9rem'},
           marginLeft: { xl: 5, lg: 5, md: 0, sm: -2, xs: -1},
-          wordSpacing: { xl: 25, lg: 20, md:10, sm:20, xs: 10}, 
+          wordSpacing: { xl: 25, lg: 20, md:10, sm:20, xs: 10},
           color: 'black'}}>
           days hours mins secs
         </Typography>
@@ -47,10 +47,10 @@ const formatTime = (time: any) => {
       );
     }
   };
-  
+
 const About: React.FC = () => {
   return (
-    <Box sx={{ paddingLeft: { xs: '20px', md: '100px' }, backgroundColor: '#FFF7F0' }}>
+    <Box id="About" sx={{ paddingLeft: { xs: '20px', md: '100px' }, backgroundColor: '#FFF7F0' }}>
       <Typography variant="h4" sx={{ fontWeight: 600, color: '#1A4CFF', marginBottom: '40px' }}>
         About
       </Typography>
