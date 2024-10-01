@@ -61,6 +61,11 @@ const Tracks: React.FC = () => {
                   <strong>Design</strong> - Project with the best UI/UX.
                 </Typography>
               </ListItem>
+              <ListItem sx={{ alignItems: 'flex-start' }}>
+                <Typography color='#9327FF' variant='h6'>
+                  <strong>Pinata</strong> - Project with the use of Pinata.
+                </Typography>
+              </ListItem>
             </List>
           </Grid>
         </Grid>
