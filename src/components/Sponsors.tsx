@@ -5,13 +5,15 @@ import klaviyo from '../assets/klaviyo.png';
 import pinata from '../assets/pinata.png';
 import scm from '../assets/scm.png';
 import sos from '../assets/stand_out_stickers.png';
+import deshaw from '../assets/deshaw.png'
 
 const sponsors = [
     { name: 'Pinata', img: pinata, link: 'https://pinata.cloud/' },
     { name: 'Klaviyo', img: klaviyo, link: 'https://www.klaviyo.com/' },
     { name: 'EY', img: ey, link: 'https://www.ey.com/en_us' },
     { name: 'SCM', img: scm, link: 'https://www.scm-lp.com/' },
-    { name: 'Stand Out Stickers', img: sos, link: 'http://hackp.ac/mlh-StandOutStickers-hackathons' }
+    { name: 'Stand Out Stickers', img: sos, link: 'http://hackp.ac/mlh-StandOutStickers-hackathons' },
+    { name: 'D. E. Shaw', img: deshaw, link: 'https://www.deshaw.com/'}
 ];
 
 const Sponsors: React.FC = () => {
