@@ -34,7 +34,7 @@ const Schedules: React.FC = () => {
         createData('11:00 AM - 11:50 AM', 'Workshop 1: Intro to Next.js / Fullstack Development'),
         createData('12:00 PM - 2:00 PM', 'Talk to Sponsors!'),
         createData('12:10 PM - 1:00 PM', 'Workshop 2: Intro to Github Copilot'),
-        createData('1:20 PM - 2:10 PM', 'Workshop 3: Types of Vulnerabilities by Cornell Cyber'),
+        createData('1:20 PM - 2:10 PM', 'Workshop 3: Types of Vulnerabilities'),
         createData('2:30 PM - 3:20 PM', 'Workshop 3: How to Build (Almost) Anything with Pinata'),
         createData('3:40 PM - 4:30 PM', 'Workshop 4: TBA'),
         createData('4:50 PM - 5:40 PM', 'Workshop 5: How to Pitch'),
