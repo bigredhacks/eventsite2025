@@ -41,7 +41,7 @@ const Schedules: React.FC = () => {
         createData('7:00 PM', 'Dinner (Taste of Thai)'),
         createData('11:30 PM', 'Cup Stacking Competition')
     ];
-    const day3 = [createData('8:00 AM', 'Breakfast: Bagels, donuts, and coffee'), createData('9:00 AM', 'Hacking Ends (Hard Deadline)'), createData('9:00 AM', 'Judging Begins'), createData('11:00 AM', 'Lunch (Firehouse Subs)'), createData('11:30 AM', 'Finalist Demos'), createData('12:00 PM', 'Judging is Finalized'), createData('12:15 PM', 'Closing Ceremony'), createData('1:00 PM', 'Hackathon Ends')];
+    const day3 = [createData('8:00 AM', 'Breakfast: Bagels, donuts, and coffee'), createData('8:30 AM', 'Hacking Ends (Hard Deadline)'), createData('9:00 AM', 'Judging Begins'), createData('11:00 AM', 'Lunch (Firehouse Subs)'), createData('11:30 AM', 'Finalist Demos'), createData('12:00 PM', 'Judging is Finalized'), createData('12:15 PM', 'Closing Ceremony'), createData('1:00 PM', 'Hackathon Ends')];
 
     return (
         <Box id='Schedule' sx={{ padding: { xs: '50px', md: '100px' }, backgroundColor: '#FFFCF4' }}>
