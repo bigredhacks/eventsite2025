@@ -22,7 +22,7 @@ const Schedules: React.FC = () => {
         createData('6:45 PM', 'Team Matching'),
         createData('7:00 PM', "Dinner (Domino's)"),
         createData('7:10 PM - 8:00 PM', 'Workshop 1: Essential Brainstorming Tools'),
-        createData('8:20 PM - 9:10 PM', 'Workshop 2: TBA'),
+        createData('8:20 PM - 9:10 PM', 'Workshop 2: Intro to Git/Github'),
         createData('9:30 PM - 10:20 PM', 'Workshop 3: Intro to Machine Learning'),
         createData('11:30 PM', 'Hacker Project Summary Deadline'),
         createData('11:30 PM', 'Spicy Ramen Competition')
@@ -36,8 +36,7 @@ const Schedules: React.FC = () => {
         createData('12:10 PM - 1:00 PM', 'Workshop 2: Intro to Github Copilot'),
         createData('1:20 PM - 2:10 PM', 'Workshop 3: Types of Vulnerabilities'),
         createData('2:30 PM - 3:20 PM', 'Workshop 3: How to Build (Almost) Anything with Pinata'),
-        createData('3:40 PM - 4:30 PM', 'Workshop 4: TBA'),
-        createData('4:50 PM - 5:40 PM', 'Workshop 5: How to Pitch'),
+        createData('4:50 PM - 5:40 PM', 'Workshop 4: How to Pitch'),
         createData('7:00 PM', 'Dinner (Taste of Thai)'),
         createData('11:30 PM', 'Cup Stacking Competition')
     ];
